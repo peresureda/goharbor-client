@@ -1,18 +1,17 @@
-module github.com/mittwald/goharbor-client/v5
+module github.com/peresureda/goharbor-client/v5
 
 go 1.20
 
 require (
-	github.com/go-openapi/errors v0.20.3
-	github.com/go-openapi/runtime v0.25.0
-	github.com/go-openapi/strfmt v0.21.3
-	github.com/go-openapi/swag v0.22.3
+	github.com/go-openapi/errors v0.20.4
+	github.com/go-openapi/runtime v0.26.0
+	github.com/go-openapi/strfmt v0.21.7
+	github.com/go-openapi/swag v0.22.4
 	github.com/go-openapi/validate v0.22.1
-	github.com/goharbor/harbor/src v0.0.0-20230220075213-6015b3efa7d0
+	github.com/goharbor/harbor/src v0.0.0-20230808025024-bd34ad560d68
 	github.com/pkg/errors v0.9.1
-	github.com/stretchr/testify v1.8.2
-	k8s.io/apimachinery v0.26.2
-
+	github.com/stretchr/testify v1.8.4
+	k8s.io/apimachinery v0.27.4
 )
 
 require (
@@ -22,7 +21,7 @@ require (
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-openapi/analysis v0.21.4 // indirect
 	github.com/go-openapi/jsonpointer v0.19.6 // indirect
-	github.com/go-openapi/jsonreference v0.20.2 // indirect
+	github.com/go-openapi/jsonreference v0.20.1 // indirect
 	github.com/go-openapi/loads v0.21.2 // indirect
 	github.com/go-openapi/spec v0.20.8 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
@@ -33,14 +32,12 @@ require (
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/rogpeppe/go-internal v1.11.0 // indirect
 	github.com/stretchr/objx v0.5.0 // indirect
-	go.mongodb.org/mongo-driver v1.11.2 // indirect
+	go.mongodb.org/mongo-driver v1.11.3 // indirect
 	go.opentelemetry.io/otel v1.14.0 // indirect
 	go.opentelemetry.io/otel/trace v1.14.0 // indirect
-	golang.org/x/sys v0.6.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	k8s.io/klog/v2 v2.90.1 // indirect
 )
-
-replace github.com/mittwald/goharbor-client/v5 => github.com/peresureda/goharbor-client/v5 5.4.0

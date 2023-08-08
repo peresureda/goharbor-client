@@ -6,7 +6,7 @@ import (
 	"context"
 	"testing"
 
-	clienttesting "github.com/mittwald/goharbor-client/v5/apiv2/pkg/testing"
+	clienttesting "github.com/peresureda/goharbor-client/v5/apiv2/pkg/testing"
 	"github.com/stretchr/testify/require"
 )
 

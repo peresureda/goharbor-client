@@ -9,11 +9,11 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/goharbor/harbor/src/pkg/quota/types"
 
-	v2client "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client"
-	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/quota"
-	"github.com/mittwald/goharbor-client/v5/apiv2/model"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/config"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/errors"
+	v2client "github.com/peresureda/goharbor-client/v5/apiv2/internal/api/client"
+	"github.com/peresureda/goharbor-client/v5/apiv2/internal/api/client/quota"
+	"github.com/peresureda/goharbor-client/v5/apiv2/model"
+	"github.com/peresureda/goharbor-client/v5/apiv2/pkg/config"
+	"github.com/peresureda/goharbor-client/v5/apiv2/pkg/errors"
 )
 
 // RESTClient is a subclient for handling project related actions.

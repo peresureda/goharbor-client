@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	jobservice "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/jobservice"
+	jobservice "github.com/peresureda/goharbor-client/v5/apiv2/internal/api/client/jobservice"
 	mock "github.com/stretchr/testify/mock"
 
 	runtime "github.com/go-openapi/runtime"
