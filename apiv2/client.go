@@ -37,6 +37,7 @@ import (
 
 	v2client "github.com/peresureda/goharbor-client/v5/apiv2/internal/api/client"
 
+	"github.com/peresureda/goharbor-client/v5/apiv2/pkg/clients/configure"
 	"github.com/peresureda/goharbor-client/v5/apiv2/pkg/clients/project"
 	"github.com/peresureda/goharbor-client/v5/apiv2/pkg/clients/registry"
 	"github.com/peresureda/goharbor-client/v5/apiv2/pkg/clients/replication"
@@ -49,6 +50,7 @@ const v2URLSuffix string = "/v2.0"
 type Client interface {
 	auditlog.Client
 	artifact.Client
+	configure.Client
 	gc.Client
 	health.Client
 	label.Client
@@ -73,6 +75,7 @@ type Client interface {
 type RESTClient struct {
 	auditlog    *auditlog.RESTClient
 	artifact    *artifact.RESTClient
+	configure   *configure.RESTClient
 	gc          *gc.RESTClient
 	health      *health.RESTClient
 	label       *label.RESTClient
@@ -211,6 +214,12 @@ func (c *RESTClient) ListTags(ctx context.Context, projectName, repositoryName, 
 
 func (c *RESTClient) RemoveLabel(ctx context.Context, projectName, repositoryName, reference string, id int64) error {
 	return c.artifact.RemoveLabel(ctx, projectName, repositoryName, reference, id)
+}
+
+// Configs
+
+func (c *RESTClient) GetConfigs(ctx context.Context) (*modelv2.ConfigurationsResponse, error) {
+	return c.configure.GetConfigs(ctx)
 }
 
 // GC Client
